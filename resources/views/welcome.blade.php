@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Show Books:</h1>
-    
+    <h1>List of Books:</h1>
+    <p>1. {{ $name1 }}</p>
+    <p>2. {{ $name2 }}</p>
+    <p>3. {{ $name3 }}</p>
 </body>
 </html>

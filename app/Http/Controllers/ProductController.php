@@ -1,23 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\show;
 
 class ProductController extends Controller
 {
-    public function show($id)
+
+    public function show($id) 
     {
-        $data = array(
-            'id' => $id,
-            '1name' => 'Harry Potter: Prisoner of Muntilupa',
-            '2name' => 'Ibong naging Darna',
-            '3name' => 'The Chronicles of Phlippine Senate',
-            '4name' => 'Ang hotdog ni Aljur'   
-        );
+       $data = array(
+        "id" => $id,
+        "name1" => 'Harry Potter',
+        "name2" => 'Ibong Adarna',
+        "name3" => 'Hekasi: Ang bagong umaga'
+       );
 
-       
+       return view('welcome', ['data' => $data]);
     }
-}
 
+}
 

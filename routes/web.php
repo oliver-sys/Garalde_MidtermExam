@@ -6,4 +6,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welcome', [ProductControllerr::class, 'show'])->name('welcome.show');
+Route::get('/welcome/{id}', [ProductController::class, 'show']);
